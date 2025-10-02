@@ -141,31 +141,54 @@
 
             <label class="form-label mt-2">Genero</label>
             <div class="row md-2">
-                <div class="form-check col">
+                <div class="form-check border col">
                     <input class="form-check-input" type="radio" name="genero" id="mujer">
                     <label class="form-check-label" for="mujer">Mujer</label>
                 </div>
-                <div class="form-check col">
+                <div class="form-check border col">
                     <input class="form-check-input" type="radio" name="genero" id="hombre">
                     <label class="form-check-label" for="hombre">Hombre</label>
                 </div>
-                <div class="form-check col">
+                <div class="form-check border col">
                     <input class="form-check-input" type="radio" name="genero" id="personalizado">
                     <label class="form-check-label" for="personalizado">Personalizado</label>
                 </div>
             </div>
-            
-            <div>
-                <label for="password">Contraseña:</label>
-                <input type="password" id="password" name="password" required>
+
+            <div id="extraGenero" class="mb-3" style="display: none;">
+                <select class="form-select mb-2">
+                    <option selected>Selecciona tu pronombre</option>
+                    <option value="fem">Femenino: "Felicítala por su cumpleaños"</option>
+                    <option value="masc">Masculino: "Felicítalo por su cumpleaños"</option>
+                    <option value="neutro">Neutro: "Felicítele por su cumpleaños"</option>
+                </select>
+                <input type="text" class="form-control" placeholder="Género (opcional)">
             </div>
-            <button type="submit">Iniciar sesión</button>
-            <a href="#">¿Olvidaste tu contraseña?</a>
-            <hr>
-            <button type="button">Crear cuenta nueva</button>
+            
+            <input type="email" class="form-control mb-2" placeholder="Número de móvil o correo electrónico" required>
+            <input type="password" class="form-control mb-3" placeholder="Contraseña nueva" required>
+
+            <p class="small text-muted">
+            Es posible que las personas que usan nuestro servicio hayan subido tu información de contacto a Facebook. 
+                <a href="#">Más información</a>.
+            </p>
+            <p class="small text-muted">
+            Al hacer clic en Registrarte, aceptas las 
+                <a href="#">Condiciones</a>, la 
+                <a href="#">Política de privacidad</a> y la 
+                <a href="#">Política de cookies</a>.
+            </p>
+
+            <div class="d-grid">
+                <button type="submit" class="btn btn-success">Registrarte</button>
+            </div>
+
+            <div class="text-center mt-3">
+          <a href="#">¿Ya tienes una cuenta?</a>
+        </div>
+
         </form>
     </main>
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
